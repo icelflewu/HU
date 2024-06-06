@@ -1,0 +1,185 @@
+/*latar background keseluruhan*/
+body {
+    background: linear-gradient(to bottom, #ffd89b, #ffa07a);
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* Gaya untuk menu navigasi bar di atas */
+#sticky-nav {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    padding: 3px;
+    background-color: #ffffff;
+}
+
+.nav-toggle {
+    display: none;
+    background-color: #fee993;
+}
+
+/* Gaya untuk tombol menu toggle */
+.toggle-menu {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/*taks di bar atas*/
+.menu li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ffffff;
+    /* Ganti dengan warna yang Anda suka */
+}
+
+.menu li a img {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+    transition: color 0.3s ease;
+}
+
+/* Style untuk bagian product */
+#product1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#product1 h1 {
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+}
+
+#product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Gaya untuk artikel dalam produk */
+#product article {
+    background-color: #ffd89b;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(33.333% - 40px);
+    /* Mengubah flex-grow dan flex-shrink menjadi 0 */
+    max-width: 300px;
+    /* Mengatur lebar maksimum 300px */
+    width: 100%;
+    /* Mengatur lebar 100% dari lebar maksimum */
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+#product article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk judul dalam artikel */
+#product article h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Gaya untuk paragraf dalam artikel */
+#product article p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: center;
+    justify-content: center;
+}
+
+#product img {
+    width: 38%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Gaya untuk tombol dalam artikel */
+#product .add-to-cart {
+    display: block;
+    /* Mengubah elemen menjadi blok */
+    margin: 10px auto;
+    /* Mengatur margin atas-bawah 10px dan margin kiri-kanan otomatis */
+    text-align: center;
+    /* Mengatur teks agar terpusat secara horizontal */
+    background-color: #ff5722;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#product .add-to-cart:hover {
+    background-color: #ffd89b;
+}
